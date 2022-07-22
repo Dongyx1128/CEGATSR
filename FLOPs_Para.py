@@ -61,7 +61,7 @@ class CEGATSR(nn.Module):
                 self.branch.append(GCN_CNN_Unit(n_subs, out_feats, up_scale=n_scale//2, use_tail=True, conv=default_conv))
                 # self.branch.append(GCN_CNN_Unit(n_subs, out_feats, use_tail=True, conv=default_conv))
 
-        self.trunk = Spatial_Spectral_Unit(in_feats, out_feats, n_blocks, act, res_scale, up_scale=2, use_tail=False, conv=default_conv)(Conv+SSB+SSB+SSB+Upsampler,无重建块)
+        self.trunk = Spatial_Spectral_Unit(in_feats, out_feats, n_blocks, act, res_scale, up_scale=2, use_tail=False, conv=default_conv)
         self.skip_conv = conv(in_feats, out_feats, kernel_size)
         self.final = conv(out_feats, in_feats, kernel_size)
         self.sca = n_scale//2
