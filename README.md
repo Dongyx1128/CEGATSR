@@ -58,5 +58,21 @@ sh train.sh
 sh test.sh
 ```
 
+## Citation
+```
+@article{dyx2022CEGATSR,
+author = {Cong Liu and Yaxin Dong},
+title = {CNN-Enhanced graph attention network for hyperspectral image super-resolution using non-local self-similarity},
+journal = {International Journal of Remote Sensing},
+volume = {43},
+number = {13},
+pages = {4810-4835},
+year  = {2022},
+publisher = {Taylor & Francis},
+doi = {10.1080/01431161.2022.2121188},
+URL = {https://doi.org/10.1080/01431161.2022.2121188},
+eprint = {https://doi.org/10.1080/01431161.2022.2121188}
+```
+
 ## Acknowledgments
 This research was supported by the National Natural Science Foundation of China (No.61703278).
