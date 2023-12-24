@@ -120,7 +120,7 @@ def train(args):
     net = CEGATSR(n_subs=args.n_subs, n_ovls=args.n_ovls, in_feats=channels, n_blocks=args.n_blocks, out_feats=args.out_feats, n_scale=args.n_scale, res_scale=0.1, use_share=args.use_share, conv=default_conv, )
     # print(net)
     model_title = args.dataset_name + "_x" + str(args.n_scale) + "_" + args.model_title + '_Blocks=' + str(args.n_blocks) + '_Subs' + str(args.n_subs) + '_Ovls' + str(args.n_ovls) + '_Feats=' + str(args.out_feats)
-    model_name = './checkpoints/' + model_title + "_ckpt_epoch_" + str(60) + ".pth"
+    model_name = './checkpoints/' + model_title + "_ckpt_epoch_" + str(args.epochs) + ".pth"
     args.model_title = model_title
 
     total = sum(param.numel() for param in net.parameters())
